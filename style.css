@@ -1,0 +1,56 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+body>nav, body>footer {
+    flex-shrink: 1;
+}
+body>main {
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: auto;
+}
+footer{
+    background: #EB802F;
+    color: white;
+    font-weight: 500;
+    margin-top:1em;
+}
+
+.ticket-item.highlight-item>.card{
+    border:5px solid #B6E388;
+}
+
+#ticket-list{
+    /* scroll-behavior: smooth; */
+}
+div#win_template {
+    width: 100%;
+    height: 100%;
+}
+
+div#win_template>img {
+    width: 100%;
+    object-fit: contain;
+}
+div#winner_name {
+    position: absolute;
+    bottom: 8em;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+div#winner_greet {
+    position: absolute;
+    top: 4em;
+    z-index: 1;
+    width: 100%;
+    color: #FFF;
+    text-shadow: 2px 2px 5px #000;
+}
